@@ -1,0 +1,14 @@
+machine:
+  node:
+    version: 6
+dependencies:
+  pre:
+    - npm install -g yarn
+  override:
+    - yarn cache clean
+    - yarn --force
+test:
+  pre:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+  override:
+    - IS_CI=true yarn run test
