@@ -5,6 +5,10 @@ printf "Running tests:\n\n"
 ./scripts/lint
 lintResult=$?
 
+echo
+echo "Running Mocha tests: "
+mocha
+
 echo "Finished tests."
 
 ! (( $lintResult ))
