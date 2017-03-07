@@ -1,9 +1,8 @@
-import './header.scss'
+// import './header.scss'
 
-import CtrlComponent from 'ctrl-react-component'
 import React from 'react'
 
-export default class Header extends CtrlComponent {
+export default class Header extends React.Component {
   render() {
     return (
       <nav className='row-fluid'>

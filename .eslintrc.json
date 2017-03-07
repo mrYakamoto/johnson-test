@@ -5,7 +5,9 @@
   }
 , "extends": "eslint:recommended"
 , "globals": {
-    "document": true
+    "describe": true
+  , "document": true
+  , "it": true
   , "window": true
   }
 , "parserOptions": {
