@@ -1,10 +1,9 @@
 import './page.scss'
 
-import CtrlComponent from 'ctrl-react-component'
 import React from 'react'
 
-class Page extends CtrlComponent {
-  renderFiltered() {
+class Page extends React.Component {
+  render() {
     const title = this.getContent('title')
 
     document.title = title
@@ -12,7 +11,7 @@ class Page extends CtrlComponent {
     return (
       <div className='page'>
         <div className='row'>
-          <h1>PLACEHOLDER PAGE COMPONENT</h1>
+          <h1>{title}</h1>
         </div>
       </div>
     )
