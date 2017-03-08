@@ -7,7 +7,7 @@ lintResult=$?
 
 echo
 echo "Running Mocha tests: "
-mocha mocha test/.setup.js test/*-test.js
+mocha test/.setup.js test/*-test.js
 
 echo "Finished tests."
 
