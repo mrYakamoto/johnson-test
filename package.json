@@ -39,6 +39,7 @@
     "eslint-config-ctrl-react": "^3.0.0",
     "eslint-plugin-react": "^6.10.0",
     "file-loader": "^0.9.0",
+    "ignore-styles": "^5.0.1",
     "jsdom": "^9.11.0",
     "json-loader": "^0.5.4",
     "jsx-loader": "^0.13.2",
