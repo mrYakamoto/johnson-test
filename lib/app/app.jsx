@@ -1,11 +1,14 @@
 import './app.scss'
 
-import ContentManager from '../content-manager/content-manager'
 import get from 'lodash.get'
+import Header from '../header/header'
+import HomePage from '../page/home'
 import React from 'react'
 import Router from '../router/router'
 
 import content from '../content/content'
+// eslint-disable-next-line no-unused-vars
+import {routes, getBackendPath} from '../content/routes'
 
 class App extends React.Component {
   constructor(props) {
@@ -17,9 +20,16 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <Router>
-        <ContentManager content={this.state.content}/>
+        <Header
+          content={content.global.header}
+        />
+        <HomePage
+          content={content.home}
+          routeFilter={routes.HomePage.filter}
+        />
       </Router>
     )
   }
@@ -37,7 +47,6 @@ function getContent(path) {
 }
 
 const proto = React.Component.prototype
-
 proto.getContent = getContent
 
 

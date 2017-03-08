@@ -23,6 +23,7 @@
   , "react/jsx-uses-vars": "error"
   , "indent": 0
   , "linebreak-style": ["error", "unix"]
+  , "no-unused-vars": 1
   , "semi": ["error", "never"]
   , "comma-style": ["error", "first"]
   }
